@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+#input-el, button {
+    margin-top: 0px;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    background: green;
+    border: 1px solid green;
+    padding: 8px 12px;
+}
+
+#reset-btn {
+    background: white;
+    color: green;
+    border: 1px solid green;
+}
+
+#input-el {
+    font-size: 16px;
+    margin-bottom: 4px;
+    border: 1px solid green;
+    padding: 8px;
+    padding-right: 200px;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 12px;
+}
