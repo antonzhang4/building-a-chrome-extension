@@ -4,7 +4,7 @@ const tabBtn = document.getElementById("tab-btn")
 const resetBtn = document.getElementById("reset-btn")
 const ulEl = document.getElementById("ul-el")
 
-let input = ""
+
 let myLeads = []
 
 let leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
@@ -24,7 +24,6 @@ tabBtn.addEventListener("click", function() {
 })
 
 saveBtn.addEventListener("click", function() {
-    input = ""
     myLeads.push(inputEl.value)
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
     render()
@@ -37,6 +36,7 @@ resetBtn.addEventListener("click", function() {
 })
 
 function render() {
+    let input = ""
     for(i=0; i<myLeads.length; i++){
         input += `
         <li><a target = '_blank' href = '${myLeads[i]}'>${myLeads[i]}</a></li>
